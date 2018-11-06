@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'bloodynormal';
+    src: url('fonts/BLOODY-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url("http://mojano.com/wp-content/uploads/2015/02/Desolation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "bloodynormal";
+}
+
+.header {
+    height: 15%;
+    width: 90%;
+    margin: 5%;
+    background-color: gray;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-family: "bloodynormal";
+    font-size: 10vh;
+}
+
+.flag {
+    height: 25px;
+    float: right;
+    margin-top: -3%;
+}
+
+.main {
+    height: 100%;
+    font-family: "bloodynormal";
+}
+
+button.connect {
+    margin-left: 50%;
+    position: absolute;
+    top: 300%;
+    margin-top: 35%;
+}
+
+button.play {
+    margin-left: 50%;
+    position: absolute;
+    top: 300%;
+    margin-top: 35%;
+}
+
+button.disconnect {
+    margin-left: 50%;
+    position: absolute;
+    top: 300%;
+    margin-top: 66%;
+}
+
+.col-4.liveChat {
+    margin-left: 676px;
+    height: 475px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: "bloodynormal";
+}
+
+.footer {
+    background-color: whitesmoke;
+    height: auto;
+    width: 100%;
+    margin: 5%;
+}
+
+.rulesText {
+    height: 50px;
+    width: 50px;
+}
+
+.rules {
+    height: 50px;
+    width: 50px;
+    margin-right: 10%;
+    padding-top: 20%;
+    padding-left: 33%;
+    font-family: "bloodynormal";
+}
+
+div.col-4.partenaireOne {
+    height: 50px;
+    width: 550px;
+    margin-right: 10%;
+}
+
+.logoS {
+    height: 125px;
+    margin-left: 320px;
+    margin-top: -25px;
+}
+
+partenaireOTwo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10%;
+}
+
+.logoL {
+    height: 125px;
+    margin-left: 500px;
+    margin-top: -75px;
+}

@@ -1,1 +1,74 @@
-Hello World
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Hang Man Game</title>
+    <meta name="PG-LPS3" content="SitePoint">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 class="title" id="title">LE JEU DU PENDU</h1>
+            <img class="flag" src="https://www.stickerz.fr/370-thickbox_default/sticker-drapeau-france.jpg" alt="fr">
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="main">
+                    <div class=" col-8">
+
+                        <div class="button ">
+                            <button type="button" class="btn btn-secondary connect " v-on:click="isConnect = true"
+                                v-if="!isConnect">se connecter</button>
+                        </div>
+                        <div class="button ">
+                            <button type="button" class="btn btn-secondary play" v-on:click="isConnect = false" v-if="isConnect">jouer</button>
+                        </div>
+
+                        <div class="button ">
+                            <button type="button" class="btn btn-secondary disconnect">quitter</button>
+                        </div>
+                    </div>
+                    <aside class="col-4 liveChat alert alert-info">
+                        <h2>joueurs connectes</h2>
+                        <div v-for = "user in data.User" v-if="isConnect">
+                            {{user.name}} {{user.victory}}
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <footer class="footer">
+                    <div class=" col-4 rulesText">
+                        <div class="rules">
+                            <div>cgu</div>
+                            <div>sitemap</div>
+                            <div>copyright</div>
+                        </div>
+                    </div>
+                    <div class="col-4 partenaireOne">
+                        <img class="logoS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrjJVbMxts6m_DBS_VSjpSqEsFukqLyu2K5SWcuNfC00tHbJzPg"
+                            alt="logo simplon">
+                    </div>
+                    <div class="col-4 partenaireTwo">
+                        <img class="logoL" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDS--naE5-gsiclNcx2eRqjy3ktOXnLGLGxNlNsvrCtiLHdQsXA"
+                            alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
